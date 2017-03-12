@@ -351,13 +351,17 @@ header {
   background-color: #f4f4f4;
 }
 
-.steps-box:first-child {
-  text-align: right;
-  padding-right: 3%;
+.steps-box {
   margin-top: 30px;
 }
 
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+}
+
 .steps-box:last-child {
+  text-align: left;
   padding-left: 3%;
   margin-top: 70px;
 }
@@ -379,8 +383,8 @@ header {
   border: 2px solid #e67e22;
   display: inline-block;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 54px;
+  width: 54px;
   text-align: center;
   padding: 5px;
   float: left;
@@ -390,7 +394,7 @@ header {
 
 .btn-app:link,
 .btn-app:visited{
-  border: none;
+  border: 0;
 }
 
 .btn-app img {
