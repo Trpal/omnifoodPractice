@@ -85,6 +85,7 @@ $(document).ready(function() {
 
   /* Maps */
 
+
   var center = [65.0562701, 25.5]
 
   $('.map')
