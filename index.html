@@ -21,6 +21,18 @@
     <title>Omnifood</title>
   </head>
   <body>
+    <!--
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    -->
+
     <header>
       <nav>
         <div class="row">
@@ -335,7 +347,7 @@
 
     <div class="map-box">
 
-      <div class="map"> </div>
+      <div class="map" id="map"> </div>
 
       <div class="form-box">
         <div class="row">
@@ -430,9 +442,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC37ObF9cPr0mCXoA7e9cJ0PbxmSjJ1Ozo&callback=initMap" type="text/javascript"></script>
     <script src="resources/js/script.js"></script>
-    <script src="vendors/js/gmaps.js"></script>
+    <script src="vendors/js/gmap3.js"></script>
   </body>
 
 

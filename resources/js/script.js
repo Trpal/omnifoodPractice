@@ -85,21 +85,18 @@ $(document).ready(function() {
 
   /* Maps */
 
-  var map = new GMaps({
-    div: '.map',
-    lat: 38.7436266,
-    lng: -9.08,
-    zoom: 12
-  });
+  var center = [65.0562701, 25.5]
 
-  map.addMarker({
-  lat: 38.743626,
-  lng: -9.160203,
-  title: 'Omnifood Lisbon',
-  infoWindow: {
-    content: '<p>Our Lisbon HQ</p>'
-  }
-});
+  $('.map')
+    .gmap3({
+    center: center,
+    zoom: 13,
+    mapTypeId : google.maps.MapTypeId.ROADMAP
+  })
+    .marker({
+    position: [65.0562701, 25.467],
+    icon: 'http://maps.google.com/mapfiles/marker_green.png'
+  });
 
 
 });
