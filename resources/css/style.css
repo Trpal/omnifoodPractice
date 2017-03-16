@@ -265,6 +265,21 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
+/* Mobile nav */
+
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff;
+}
+
+
 /* sticky nav */
 
 .sticky {
@@ -527,7 +542,7 @@ cite img {
 /* ---------------------- */
 
 .contact-form {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -551,7 +566,30 @@ input[type=checkbox] {
 
 *:focus {outline: none}
 
+.map-box {
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
 
+.map {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  z-index: 0;
+}
+
+.form-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  height: 550px;
+  padding-top: 40px;
+
+}
 
 
 /* ---------------------- */
@@ -635,4 +673,30 @@ footer p {
   color: #888;
   text-align: center;
   margin-top: 20px;
+}
+
+
+/* ---------------------- */
+/*  Animations */
+/* ---------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3
+{
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.js--wp-4
+{
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated{
+  opacity: 1;
 }

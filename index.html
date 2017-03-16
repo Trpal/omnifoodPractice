@@ -2,14 +2,22 @@
 <html lang="en">
   <head>
 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compelling description for search engines">
 
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="resources/favicons/favicon.ico" type="image/x-icon">
+
+
     <title>Omnifood</title>
   </head>
   <body>
@@ -18,12 +26,13 @@
         <div class="row">
           <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
           <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
-          <ul class="main-nav">
+          <ul class="main-nav js--main-nav">
             <li><a href="#features">food delivery</a></li>
             <li><a href="#steps">How it works</a></li>
             <li><a href="#cities">Our cities</a></li>
             <li><a href="#plans">Sign up</a></li>
           </ul>
+          <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
         </div>
       </nav>
       <div class="hero-text-box">
@@ -42,7 +51,7 @@
         </p>
       </div>
 
-      <div class="row">
+      <div class="row js--wp-1">
         <div class="col span-1-of-4 box">
           <i class="ion-ios-infinite-outline icon-big"></i>
           <h3>Up to 365 days/year</h3>
@@ -130,7 +139,7 @@
       </div>
       <div class="row">
         <div class="col span-1-of-2 steps-box">
-          <img src="resources/img/app-iPhone.png" alt="omnifood app on iPhone" class="app-screen">
+          <img src="resources/img/app-iPhone.png" alt="omnifood app on iPhone" class="app-screen js--wp-2">
         </div>
         <div class="col span-1-of-2 steps-box">
           <div class="works-step clearfix">
@@ -156,7 +165,7 @@
         <h2>We are currently in these cities</h2>
       </div>
 
-      <div class="row">
+      <div class="row js--wp-3">
 
         <div class="col span-1-of-4 box">
           <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
@@ -236,21 +245,21 @@
         <div class="col span-1-of-3">
           <blockquote>
             Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
-            <cite><img src="resources/img/customer-1.jpg">Alberto Duncan</cite>
+            <cite><img src="resources/img/customer-1.jpg" alt="pic of alberto">Alberto Duncan</cite>
           </blockquote>
         </div>
 
         <div class="col span-1-of-3">
           <blockquote>
             Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
-            <cite><img src="resources/img/customer-2.jpg">Joana Silva</cite>
+            <cite><img src="resources/img/customer-2.jpg" alt="picture of Jonas">Joana Silva</cite>
           </blockquote>
         </div>
 
         <div class="col span-1-of-3">
           <blockquote>
             I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
-            <cite><img src="resources/img/customer-3.jpg">Milton Chapman</cite>
+            <cite><img src="resources/img/customer-3.jpg" alt="picture of Milton">Milton Chapman</cite>
           </blockquote>
         </div>
       </div>
@@ -262,7 +271,7 @@
       </div>
       <div class="row">
         <div class="col span-1-of-3">
-          <div class="plan-box">
+          <div class="plan-box js--wp-4">
             <div>
               <h3>Premium</h3>
               <p class="plan-price">$399 <span>/ month</span></p>
@@ -324,68 +333,73 @@
       </div>
     </section>
 
-    <section class="section-form">
-      <div class="row">
-        <h2>WE're happy to hear from you</h2>
+    <div class="map-box">
+
+      <div class="map"> </div>
+
+      <div class="form-box">
+        <div class="row">
+          <h2>WE're happy to hear from you</h2>
+        </div>
+        <div class="row">
+          <form method="post" action="#" class="contact-form">
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="name">Name</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="text" name="name" id="name" placeholder="Your name" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="email">Email</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="email" name="email" id="email" placeholder="Your email" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="find-us">How did you find us</label>
+              </div>
+              <div class="col span-2-of-3">
+                <select name="find-us" id="find-us">
+                  <option value="friends">Friends</option>
+                  <option value="search">Search engine</option>
+                  <option value="add">Advertisement</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="news">Newsletter</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="checkbox" name="news" id="news" checked> Yes, please
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="message">Drop us a line</label>
+              </div>
+              <div class="col span-2-of-3">
+                <textarea name="message" id="message" placeholder="your message"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label>&nbsp;</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="submit" value="Send it!">
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="row">
-        <form method="post" action="#" class="contact-form">
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="name">Name</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="text" name="name" id="name" placeholder="Your name" required>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="email">Email</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="email" name="email" id="email" placeholder="Your email" required>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="find-us">How did you find us</label>
-            </div>
-            <div class="col span-2-of-3">
-              <select name="find-us" id="find-us">
-                <option value="friends">Friends</option>
-                <option value="search">Search engine</option>
-                <option value="add">Advertisement</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="news">Newsletter</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="checkbox" name="news" id="news" checked> Yes, please
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="message">Drop us a line</label>
-            </div>
-            <div class="col span-2-of-3">
-              <textarea name="message" id="message" placeholder="your message"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label>&nbsp;</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="submit" value="Send it!">
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
+    </div>
 
     <footer>
       <div class="row">
@@ -416,8 +430,14 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="resources/js/script.js"> </script>
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="resources/js/script.js"></script>
+    <script src="vendors/js/gmaps.js"></script>
   </body>
 
 
 </html>
+
+<!--
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMdxhzAXb6aJudFHmX6AcI_RDdaTqPOw&callback=initMap" type="text/javascript"></script> -->
+
