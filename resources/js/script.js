@@ -96,7 +96,7 @@ $(document).ready(function() {
   })
     .marker({
     position: [65.0562701, 25.467],
-    icon: 'http://maps.google.com/mapfiles/marker_green.png'
+    icon: 'https://maps.google.com/mapfiles/marker_green.png'
   });
 
 
